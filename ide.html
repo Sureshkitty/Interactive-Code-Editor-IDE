@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Interactive Code Editor IDE</title>
+    <link rel="icon" href="logo.jpg" type="image/jpg">
+</head>
+<body>
+    <a href="index.html" class="online-button"><i class="fas fa-arrow-left"></i></a>
+    <div class="container">
+        <div class="header">
+            <img src="logo-page2" alt="Logo" class="logo">
+            <h1>Interactive Code Editor IDE</h1>
+        </div>
+        <div class="theme-buttons">
+            <button id="dark-theme" class="theme-button"><i class="fas fa-moon"></i> Dark Theme</button>
+            <button id="light-theme" class="theme-button"><i class="fas fa-sun"></i> Light Theme</button>
+        </div>
+        <div>
+            <label for="bg-color">Select Background Color:</label>
+            <input type="color" id="bg-color" value="#1e1e1e">
+        </div>
+        <div class="editor-container">
+            <div class="code-box" id="html-box">
+                <h2>
+                    <i class="fab fa-html5"></i> HTML 
+                    <i class="fas fa-minus minimize" data-target="html"></i>
+                </h2>
+                <textarea id="html-editor" placeholder="Write your HTML code here..."></textarea>
+                <div class="resize-controls">
+                    <button class="resize-button" data-target="html" data-size="1">+</button>
+                    <button class="resize-button" data-target="html" data-size="-1">-</button>
+                </div>
+            </div>
+            <div class="code-box" id="css-box">
+                <h2>
+                    <i class="fab fa-css3-alt"></i> CSS 
+                    <i class="fas fa-minus minimize" data-target="css"></i>
+                </h2>
+                <textarea id="css-editor" placeholder="Write your CSS code here..."></textarea>
+                <div class="resize-controls">
+                    <button class="resize-button" data-target="css" data-size="1">+</button>
+                    <button class="resize-button" data-target="css" data-size="-1">-</button>
+                </div>
+            </div>
+            <div class="code-box" id="js-box">
+                <h2>
+                    <i class="fab fa-js"></i> JavaScript 
+                    <i class="fas fa-minus minimize" data-target="js"></i>
+                </h2>
+                <textarea id="js-editor" placeholder="Write your JavaScript code here..."></textarea>
+                <div class="resize-controls">
+                    <button class="resize-button" data-target="js" data-size="1">+</button>
+                    <button class="resize-button" data-target="js" data-size="-1">-</button>
+                </div>
+            </div>
+            
+        </div>
+        <button id="run">
+            <i class="fas fa-play"></i> Run Code
+        </button>
+        
+        <h2>Preview</h2>
+        <iframe id="preview"></iframe>
+    </div>
+    <footer class="social-footer">
+        <a href="https://www.linkedin.com/in/suresh-sherikar-320560333" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/Sureshkitty" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:suresh.sherikar1712@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.instagram.com/techie_suresh" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </footer>
+    <script src="ide.js"></script>
+</body>
+</html>
